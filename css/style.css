@@ -1,0 +1,573 @@
+@charset 'UTF-8';
+
+	*
+	{
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	body, input, textarea
+	{
+		font-family: 'Open Sans', sans-serif;
+		line-height: 1.85em;
+		font-size: 16px;
+		color: #888;
+		font-weight: 300;
+	}
+
+	h3
+	{
+		font-size: 1.5em;
+		font-weight: normal;
+		letter-spacing: -0.015em;
+		margin: 0 0 0.75em 0;
+		text-align: center;
+	}
+
+	a
+	{
+		color: #3B95C6;
+		text-decoration: underline;
+		-moz-transition: color .2s ease-in-out;
+		-webkit-transition: color .2s ease-in-out;
+		-o-transition: color .2s ease-in-out;
+		-ms-transition: color .2s ease-in-out;
+		transition: color .2s ease-in-out;
+	}
+	
+		a:hover
+		{
+			color: #1B75A6 !important;
+		}
+
+		a img
+		{
+			border: 0;
+		}
+
+	strong, b
+	{
+		font-weight: 600;
+		color: #3e3e3e;
+	}
+
+	header
+	{
+		margin: 0 0 3em 0;
+	}
+	
+		header > span
+		{
+			font-size: 1.25em;
+		}
+
+	footer
+	{
+		margin: 3em 0 0 0;
+		text-align: center;
+	}
+	
+		footer > p
+		{
+			font-size: 1.25em;
+		}
+
+	.container {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	.button
+	{
+		/*padding: 1em 2.35em 1em 2.35em;*/
+		padding: 0.5em 2em 0.5em 2em;
+		font-size: .8em;
+		background: #eb234e;
+		font-weight: 600;
+		border-radius: 0;
+		text-shadow: none;
+		background-image: none;
+
+	}
+
+		.button:hover
+		{
+			background-color: #ff3366;
+			color: #fff !important;
+		}
+		
+		.button:active
+		{
+			background-color: #ff3366;
+			background-image: none;
+			top: 1px;
+		}
+
+		.button-big
+		{
+			font-size: 1.5em;
+			letter-spacing: -0.025em;
+		}
+
+	form
+	{
+			background-color: #d9d9d9;
+			padding: 1em;
+	}
+	
+		form input,
+		form select,
+		form textarea
+		{
+			-webkit-appearance: none;
+		}
+
+		form input[type=text],
+		form input[type=password],
+		form select,
+		form textarea
+		{
+			border: 0;
+			padding: 0.3em 0.6em;
+			font-size: .75em;
+			border-radius: 0;
+			background: #ffffff;
+			color: #000;
+			box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.05), 0px 1px 0px 0px rgba(255,255,255,0.025);
+			width: 100%;
+			-moz-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+			-webkit-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+			-o-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+			-ms-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+			transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
+		}
+
+		form input[type=text]:focus,
+		form input[type=password]:focus,
+		form select:focus,
+		form textarea:focus
+		{
+			background: #f4f4f4;
+			box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.05), 0px 1px 0px 0px rgba(255,255,255,0.025), inset 0px 0px 2px 1px #74CAEE;
+		}
+
+		form textarea
+		{
+			height: 5em;
+		}
+		
+		form .formerize-placeholder
+		{
+			color: #555 !important;
+		}
+
+		form ::-webkit-input-placeholder
+		{
+			color: #555 !important;
+		}
+
+		form :-moz-placeholder
+		{
+			color: #555 !important;
+		}
+
+		form ::-moz-placeholder
+		{
+			color: #555 !important;
+		}
+
+		form :-ms-input-placeholder
+		{
+			color: #555 !important;
+		}
+
+		form ::-moz-focus-inner
+		{
+			border: 0;
+		}
+
+		form .button
+		{
+			margin: 0 0 0 0.5em;
+			float: right;
+		}
+
+		form .formintro 
+		{
+			text-align: left;
+			color: black;
+			padding: .5em;
+		}
+
+		::-webkit-input-placeholder, 
+		:-moz-placeholder, 
+		::-moz-placeholder, 
+		:-ms-input-placeholder 
+		{
+			color: #bbb;
+		}
+
+		.form {
+			position: relative;
+		}
+
+		.formconfirmation, 
+		.formcontainer {
+			position:absolute;
+			/*left: 0;	*/
+			/*top: 0;	*/
+			/*width: 80%;*/
+			-moz-transition: all 1s ease-in-out;
+			-webkit-transition: all 1s ease-in-out;
+			-o-transition: all 1s ease-in-out;
+			-ms-transition: all 1s ease-in-out;
+			transition: all 1s ease-in-out;
+		}
+
+		.formconfirmation.transparent, 
+		.formcontainer.transparent {
+			opacity: 0;
+			z-index: -999;
+		}
+
+		.formconfirmation {
+			background-color: #d9d9d9;
+			margin: auto;
+			font-size: 2em;
+			padding-top: 20%
+		}
+
+	#nav
+	{
+		background-color: #f4f4f4;
+		text-align: center;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+		cursor: default;
+		box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
+		height: 6.25em; /*100px;*/
+	}
+	
+		#nav ul
+		{
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+	
+		#nav li
+		{
+			display: inline-block;
+		}
+		
+		#nav a
+		{
+			position: relative;
+			display: block;
+			text-decoration: none;
+			outline: 0;
+			padding: 0.5em 0 0.2em 0;
+			margin: 1.2em 0.5em;
+			font-weight: 400;
+			font-size: 1.5em;
+			color: #595959;
+		}
+		
+			#nav a:hover
+			{
+				color: #888 !important; 
+				border-bottom: .05em #ccc solid ;
+			}
+			
+			#nav a.active:before
+			{
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: -0.6em;
+				left: 50%;
+				margin-left: -0.75em;
+				border-left: solid 0.75em transparent;
+				border-right: solid 0.75em transparent;
+				border-top: solid 0.6em #282828;
+			}
+			
+			#nav a.nav-active 
+			{
+				/*text-decoration: underline;*/
+				border-bottom: .1em solid;
+			}
+
+			#nav .logo 
+			{
+				float: left;
+			}
+
+			#nav .logo.small:after 
+			{
+				vertical-align: middle;
+				content: url(./../images/realplacelogomedium.png);
+				-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+				/*transition: height 1s transform 1s ease;		*/
+				transition: all 0.5s ease;
+				/*transform: scale(1,0.5);*/
+			}
+
+			#nav .logo.big:after
+			{
+				content: url(./../images/realplacelogobig.png);
+				margin-top: 2em;
+				position: fixed;
+				/*z-index: -1;*/
+				-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+				/*transition: height 1s transform 1s ease;		*/
+				transition: all 0.5s ease;
+				/*transform: scale(1,2);*/
+			}
+
+			#nav .menu 
+			{
+				float: right;
+			}
+
+		#nav .menu-container {
+			float: right;
+			/*height: 100px;*/
+		}
+
+		#nav .toggle-topbar.menu-icon {
+			padding: 0.4em;
+			text-align: right;
+		}
+
+	.nyphoto 
+	{
+		min-height: 500px;
+	}		
+
+	.screenshot 
+	{
+		margin: auto;
+	}
+
+	.screenshot img {
+		width: 100%;
+		max-width: 350px;
+	}
+
+	.imgcaption, p {
+		font-weight: 400;
+	}
+
+	.wrapper
+	{
+		padding: 5em 0;
+		text-align: center;
+		font-size: 1.5em;
+		line-height: 1.75em;
+		/*background-image: url('images/bg.png');*/
+		box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
+		/*box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.05) , inset 0px -10px 0px 0px rgba(0,0,0,0.1);*/
+		background-image: none;
+	}
+
+	.wrapper-style3
+	{
+		background-color: #f4f4f4;
+		/*text-shadow: 1px 1px 0px #fff;*/
+		text-shadow: none;
+	}
+
+	.wrapper.nybackground 
+	{
+		background-image: url(./../images/newyork.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: 50% 100px;
+		background-attachment: fixed;
+		box-shadow: none;
+		padding: 8em 0 .5em 0;
+	}
+
+	.wrapper.intro 
+	{
+		padding: 1em 0 8em 0;
+	}
+
+	#copyright
+	{
+		font-size: 1em;
+	}
+
+		#copyright li
+		{
+			display: inline-block;
+			border-left: solid 1px rgba(0,0,0,0.5);
+			box-shadow: -1px 0px 0px 0px rgba(255,255,255,0.1);
+			padding: 0 1em 0 1em;
+		}
+		
+		#copyright li:first-child
+		{
+			border: 0;
+			box-shadow: none;
+			padding-left: 0;
+		}
+
+		#contact {
+			height: 27em;
+			position: relative;
+		}
+
+		@media only screen and (min-width: 1025px) {
+			#nav .toggle-topbar {
+				display: none
+			}
+
+		}
+
+		@media only screen and (max-width: 1024px) {
+
+			#nav .menu-container {
+				float: none;
+				right: 0;
+				position: absolute;
+				padding-right: 1em;
+				/*height: 100px;*/
+			}
+
+			#nav .menu {
+				/*float: none;*/
+				height: 100px;
+			}
+
+			#nav ul
+			{
+				position: relative;
+				top: -500px;
+				transition: all .3s ease-in-out;
+				width: 300;
+				/*z-index: 500;*/
+			}
+
+			#nav li {
+				border-top: 1px solid #888;
+				border-bottom: 0;
+				width: 100%;
+				display: inline-block;
+				background-color:  #f4f4f4;
+				z-index: 500;
+			}
+
+			#nav .top-bar-section {
+				position: relative;
+				right: -1em;
+			}
+
+			#nav .top-bar-section.expanded ul 
+			{
+				top: -4px;
+				transition: all .3s ease-in-out;
+			}
+
+			#nav a {
+				margin: 0.6em 0 0.6em 0.6em;
+				/*margin-right: 0;*/
+				font-size: 2em;
+			}
+
+			#nav .toggle-topbar.menu-icon a span {
+				position: relative;
+				/*padding-right: 2em;*/
+			}
+
+			#nav .toggle-topbar.menu-icon a span::after {
+				content: " ";
+				border-style: solid none double;
+				border-width: 4px 0 12px;
+				display: inline-block;
+				height: 20px;
+				width: 30px;	
+				margin-left: 10px;			
+   			}
+
+/*			#nav .logo.expanded:after 
+			{
+				vertical-align: middle;
+				content: url(./../images/realplacelogomedium.png);
+				margin-top: 0;
+				position: relative;
+				-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+			}
+*/
+
+			#nav .menu-icon a {
+				border-top: 0;
+			}
+
+			#nav a:hover, 
+			#nav a.nav-active {
+				border-bottom: 0
+			}
+
+			.nyphoto 
+			{
+				min-height: 14.6em;
+			}		
+
+			.wrapper.nybackground {
+				background-position: 50% 50px;
+				padding: 2.5em 0 0.5em 0;
+			}
+
+			.wrapper.intro {
+				padding: 1em 0 4em 0;
+			} 
+		}
+
+		@media only screen and (max-width: 550px) {
+			body {
+				font-size: 8px;
+			}
+
+			#nav .logo {
+				/*display: none;*/
+				content: url(./../images/realplacelogomedium.png);
+				width: 20em;
+				padding-top: 1.5em;
+			}
+
+			#nav ul {
+				width: 100%;
+			}
+
+			#nav .top-bar-section.expanded ul 
+			{
+				top: -8px;
+			}
+
+			.grid-pad {
+				padding-top: 0;
+			}
+
+			.formconfirmation, 
+			.formcontainer {
+				left: 2.5em;
+			}
+
+		}
+

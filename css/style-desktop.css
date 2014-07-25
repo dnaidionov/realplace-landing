@@ -1,0 +1,110 @@
+
+	.button
+	{
+		/*padding: 1em 2.35em 1em 2.35em;*/
+		padding: 0.5em 2em 0.5em 2em;
+		font-size: 1.1em;
+		background: #eb234e;
+		font-weight: normal;
+		border-radius: 0;
+		text-shadow: none;
+		background-image: none;
+
+	}
+
+		.button:hover
+		{
+			background-color: #ff3366;
+			color: #fff !important;
+		}
+		
+		.button:active
+		{
+			background-color: #ff3366;
+			background-image: none;
+			top: 1px;
+		}
+
+		.button-big
+		{
+			font-size: 1.5em;
+			letter-spacing: -0.025em;
+		}
+
+	#nav
+	{
+	}
+
+		#nav 
+		{
+			background: #f4f4f4;
+		}
+
+		#nav a
+		{
+			padding: 0.5em 0 0.2em 0;
+			margin: 0.6em 1.2em 0.6em 1.2em;
+			font-weight: 600;
+			font-size: 2em;
+			color: #595959;
+		}
+
+		#nav a:hover
+		{
+			/*background: #383838;*/
+			color: #888 !important; 
+			border-bottom: .05em #ccc solid ;
+
+		}
+		
+		#nav a:active
+		{
+			/*background: #484848;*/
+		}
+	
+		#nav a:last-child 
+		{
+			margin-right: 0;
+		}
+
+		#nav a.nav-active 
+		{
+			/*text-decoration: underline;*/
+			border-bottom: .1em solid;
+		}
+
+		#nav .logo 
+		{
+			float: left;
+		}
+
+		#nav .logo.small:after 
+		{
+			vertical-align: middle;
+			content: url(./../images/realplacelogomedium.png);
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			/*transition: height 1s transform 1s ease;		*/
+			transition: all 0.5s ease;
+			/*transform: scale(1,0.5);*/
+		}
+
+		#nav .logo.big:after
+		{
+			content: url(./../images/realplacelogobig.png);
+			margin-top: 2em;
+			position: fixed;
+			/*z-index: -1;*/
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			/*transition: height 1s transform 1s ease;		*/
+			transition: all 0.5s ease;
+			/*transform: scale(1,2);*/
+		}
+
+		#nav .menu 
+		{
+			float: right;
+		}

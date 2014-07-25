@@ -1,0 +1,25 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Projects\\responsive web templates\\ascend-pack"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Projects\\responsive web templates\\html5up-miniport"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Projects\\responsive web templates\\launchpad-pack"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Projects\\responsive web templates\\app-landing-page"
+		}
+	]
+}
