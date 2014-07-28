@@ -200,8 +200,9 @@ jQuery(function() {
 			var docHeight = $(document).height();
 			var curActive = $(".nav-active");
 			var logo = $("#nav .logo");
+			var logoThreshold = $(".intro").offset().top - $("#nav").height() * 2;
 
-			if(windowPos > $(".intro").offset().top) {
+			if(windowPos > logoThreshold) {
 				if (logo.hasClass("big") || !logo.hasClass("small")) {
 					logo.removeClass("big").addClass("small");
 				}

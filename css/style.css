@@ -13,14 +13,14 @@
 	{
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		font-size: 16px;
+		font-size: 12px;
 		color: #888;
 		font-weight: 300;
 	}
 
 	h3
 	{
-		/*font-size: 1.5em;*/
+		font-size: 1.33em;
 		font-weight: normal;
 		letter-spacing: -0.015em;
 		margin: 0 0 0.75em 0;
@@ -94,7 +94,6 @@
 		background-image: none;
 		color: #FFF;
 		text-decoration: none;
-
 	}
 
 		.button:hover
@@ -204,6 +203,8 @@
 			text-align: left;
 			color: black;
 			padding: .5em;
+			font-size: 0.75em;
+			font-weight: 400
 		}
 
 		::-webkit-input-placeholder, 
@@ -223,7 +224,7 @@
 			position:absolute;
 			/*left: 0;	*/
 			/*top: 0;	*/
-			/*width: 80%;*/
+			width: 100%;
 			-moz-transition: all 1s ease-in-out;
 			-webkit-transition: all 1s ease-in-out;
 			-o-transition: all 1s ease-in-out;
@@ -317,8 +318,9 @@
 
 			#nav .logo.small:after 
 			{
-				vertical-align: middle;
-				content: url(./../images/realplacelogomedium.png);
+				margin-top: 1em;
+				position: fixed;
+				content: url(./../images/realplacelogosmall.png);
 				-webkit-transition: all 0.5s ease;
 				-moz-transition: all 0.5s ease;
 				-o-transition: all 0.5s ease;
@@ -380,11 +382,15 @@
 		color: #000;
 	}
 
+	.u {
+		text-decoration: underline;
+	}
+
 	.wrapper
 	{
 		padding: 5em 0;
 		text-align: center;
-		font-size: 1.25em;
+		font-size: 1.65em;
 		line-height: 1.75em;
 		/*background-image: url('images/bg.png');*/
 		box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
@@ -563,7 +569,7 @@
 
 			#nav .logo {
 				/*display: none;*/
-				content: url(./../images/realplacelogomedium.png);
+				content: url(./../images/realplacelogosmall.png);
 				width: 20em;
 				padding-top: 1.5em;
 			}
