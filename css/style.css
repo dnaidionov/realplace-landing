@@ -232,14 +232,17 @@
 		.formconfirmation.transparent, 
 		.formcontainer.transparent {
 			opacity: 0;
-			z-index: -999;
 		}
 
 		.formconfirmation {
 			background-color: #d9d9d9;
 			margin: auto;
 			font-size: 2em;
-			padding-top: 20%
+			/*z-index: -999;*/
+		}
+
+		.formconfirmation * {
+			padding-top: 4em;
 		}
 
 	#nav
