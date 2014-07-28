@@ -152,7 +152,7 @@ jQuery(function() {
 			type: 'post',
 			url: 'contactform/contactscript.php',
 			data: $('form').serialize(),
-			done: function() {
+			success: function() {
 				$(".formconfirmation").height($(".formcontainer").height());
 				$(".formconfirmation").width($(".formcontainer").width());
 				$(".formcontainer").addClass("transparent");
