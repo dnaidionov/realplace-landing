@@ -20,7 +20,7 @@
 
 	h3
 	{
-		font-size: 1.5em;
+		/*font-size: 1.5em;*/
 		font-weight: normal;
 		letter-spacing: -0.015em;
 		margin: 0 0 0.75em 0;
@@ -92,6 +92,8 @@
 		border-radius: 0;
 		text-shadow: none;
 		background-image: none;
+		color: #FFF;
+		text-decoration: none;
 
 	}
 
@@ -370,14 +372,19 @@
 	}
 
 	.imgcaption, p {
-		font-weight: 400;
+		font-weight: 300;
+	}
+
+	.imgcaption {
+		font-size: 0.8em;
+		color: #000;
 	}
 
 	.wrapper
 	{
 		padding: 5em 0;
 		text-align: center;
-		font-size: 1.5em;
+		font-size: 1.25em;
 		line-height: 1.75em;
 		/*background-image: url('images/bg.png');*/
 		box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
@@ -406,6 +413,13 @@
 	.wrapper.intro 
 	{
 		padding: 1em 0 8em 0;
+	}
+
+	#demo h3, 
+	#contact h3 {
+		color: #000;
+		font-weight: 600;
+		font-size: 1em;
 	}
 
 	#copyright
